@@ -1,4 +1,5 @@
 import './App.css';
+import HellWord from './components/HelloWord';
 
 function App() {
 
@@ -18,6 +19,8 @@ function App() {
     <p>Olá, me chamo {newname}!</p>
     <p>Soma:{soma(1, 2)}</p>
     <img src={url} alt="Imagem de exemplo" />
+    <HellWord/>
+    <Frase/>
     </div>
   );
 }
