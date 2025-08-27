@@ -1,26 +1,16 @@
 import './App.css';
-import HellWord from './components/HelloWord';
+import SayMyName from './components/SayMyName';
+import Pessoa from './components/Pessoa';
 
 function App() {
-
-    const name = "Matheus"
-
-    const newname= name.toUpperCase();
-
-    function soma(a, b) {
-        return a + b;
-    }
-
-    const url="https://via.placeholder.com/150";
+  const nome="Maria"
 
   return (
     <div className="App">
-    <h2>Alterando JSK</h2>
-    <p>Olá, me chamo {newname}!</p>
-    <p>Soma:{soma(1, 2)}</p>
-    <img src={url} alt="Imagem de exemplo" />
-    <HellWord/>
-    <Frase/>
+    <SayMyName nome='Matheus'/>
+    <SayMyName nome='João'/>
+    <SayMyName nome={nome}/>
+    <Pessoa nome="Rodrigo" idade='22' profissao='Programador' foto='https://placehold.co/150'/>
     </div>
   );
 }
